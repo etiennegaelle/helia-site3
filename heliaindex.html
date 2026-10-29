@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HÉLIA. — Club de femmes créatives indépendantes</title>
+  
+  <!-- Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivoire: '#F5F1EB',
+            noirChaud: '#24211F',
+            brunCacao: '#4D4038',
+            brunFonce: '#2B2521',
+            vertOlive: '#787960',
+            ambre: '#C38B3D',
+            rosePoudre: '#E5BFCF'
+          },
+          fontFamily: {
+            garamond: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            inter: ['"Inter"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F5F1EB;
+      color: #24211F;
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .member-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="selection:bg-ambre/20 selection:text-noirChaud">
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-ivoire/95 backdrop-blur-md border-b border-noirChaud/10 transition-all">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex flex-col group">
+        <span class="font-serif-title text-2xl md:text-3xl tracking-[0.25em] font-medium text-noirChaud uppercase">
+          HÉLIA<span class="text-ambre">.</span>
+        </span>
+        <span class="text-[10px] md:text-[11px] tracking-wider text-brunCacao uppercase font-normal -mt-1">
+          Club de femmes créatives indépendantes
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-7 text-[13px] tracking-wide text-noirChaud/80">
+        <a href="#origine" class="hover:text-noirChaud transition-colors">Origine</a>
+        <a href="#mission" class="hover:text-noirChaud transition-colors">À quoi sert Hélia</a>
+        <a href="#membres" class="hover:text-noirChaud transition-colors">L'Annuaire</a>
+        <a href="#formats" class="hover:text-noirChaud transition-colors">Nos Formats</a>
+        <a href="#agenda" class="hover:text-noirChaud transition-colors">Agenda</a>
+        <a href="https://www.instagram.com/_heliaclub/" target="_blank" rel="noopener noreferrer" class="hover:text-ambre transition-colors">
+          @_heliaclub
+        </a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-medium tracking-wide bg-ambre text-noirChaud hover:brightness-105 transition-all shadow-sm">
+          Remplir le formulaire
+        </a>
+      </div>
+
+      <button id="menu-btn" aria-label="Menu" class="md:hidden text-noirChaud p-2 focus:outline-none">
+        <svg class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-6 border-b border-noirChaud/10 bg-ivoire space-y-3 text-sm">
+      <a href="#origine" class="block py-1 text-noirChaud/80">Origine</a>
+      <a href="#mission" class="block py-1 text-noirChaud/80">À quoi sert Hélia</a>
+      <a href="#membres" class="block py-1 text-noirChaud/80">L'Annuaire</a>
+      <a href="#formats" class="block py-1 text-noirChaud/80">Nos Formats</a>
+      <a href="#agenda" class="block py-1 text-noirChaud/80">Agenda</a>
+      <a href="https://www.instagram.com/_heliaclub/" target="_blank" rel="noopener noreferrer" class="block py-1 text-ambre">@_heliaclub</a>
+      <a href="#contact" class="inline-block mt-2 px-5 py-2.5 rounded-full text-xs font-medium bg-ambre text-noirChaud">
+        Remplir le formulaire
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Colonne Gauche -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <span class="inline-block text-xs md:text-sm tracking-[0.2em] uppercase text-vertOlive mb-6 font-medium">
+            Tout commence autour d'une table<span class="text-ambre">.</span>
+          </span>
+
+          <h1 class="font-serif-title text-4xl sm:text-6xl md:text-7xl font-normal text-noirChaud leading-[1.12] mb-6">
+            Créer du lien, naturellement<span class="text-ambre">.</span>
+          </h1>
+
+          <p class="max-w-2xl text-base sm:text-lg text-brunCacao leading-relaxed font-light mb-8 mx-auto lg:mx-0">
+            Les plus belles rencontres ne sont pas toujours celles que l'on cherche. Souvent, elles commencent simplement par une chaise libre autour d'un café.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#membres" class="w-full sm:w-auto px-8 py-3.5 rounded-full text-sm font-medium bg-ambre text-noirChaud hover:brightness-105 transition-all shadow-sm text-center">
+              Découvrir les membres
+            </a>
+            <a href="#agenda" class="w-full sm:w-auto px-8 py-3.5 rounded-full text-sm font-normal text-noirChaud border border-noirChaud/20 hover:bg-noirChaud/5 transition-all text-center">
+              Voir les prochains événements
+            </a>
+          </div>
+        </div>
+
+        <!-- Colonne Droite : Triple Rectangle avec couleur dynamique -->
+        <div class="lg:col-span-5 w-full max-w-md mx-auto">
+          <div class="p-4 sm:p-5 rounded-3xl bg-white/70 border border-noirChaud/15 shadow-sm space-y-3">
+            
+            <!-- Rectangle moyen avec couleur liée à l'événement -->
+            <div id="hero-event-card" class="p-6 rounded-2xl border border-noirChaud/10 space-y-3 transition-colors duration-300">
+              <div class="flex items-center justify-between">
+                <span id="hero-event-badge" class="text-[10px] uppercase tracking-wider px-3 py-1 rounded-full font-semibold">
+                  Prochain rendez-vous
+                </span>
+                <span class="text-[11px] text-brunCacao/70 font-medium">
+                  Brest
+                </span>
+              </div>
+
+              <div>
+                <h3 id="hero-event-type" class="font-serif-title text-2xl text-noirChaud font-medium leading-snug">
+                  Café Connexion
+                </h3>
+                <p id="hero-event-place" class="text-xs text-brunCacao font-normal mt-0.5">
+                  Chez Les Gâteuses
+                </p>
+              </div>
+
+              <div class="pt-2 border-t border-noirChaud/10 flex items-center gap-2 text-xs text-noirChaud/85 font-medium">
+                <svg id="hero-event-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                <span id="hero-event-date">Jeudi 5 Novembre à 14h00</span>
+              </div>
+
+              <p id="hero-event-desc" class="text-[11px] text-brunCacao/80 font-light leading-relaxed pt-1">
+                Une rencontre douce et informelle autour d'une gourmandise pour faire connaissance, échanger et tisser les premiers liens sans filtre.
+              </p>
+            </div>
+
+            <!-- Petit rectangle en dessous : Inscription -->
+            <div class="p-4 rounded-2xl bg-white border border-noirChaud/10 flex items-center justify-between gap-4">
+              <div class="text-xs text-brunCacao font-light">
+                <span class="font-medium text-noirChaud block text-xs">Il reste quelques places</span>
+                <span class="text-[11px] text-brunCacao/70">Inscription simple & rapide</span>
+              </div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKsCdIE88pKuC-yP-KurIXWw0v0dAbdxQkZTuG65wY1SRJ2A/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full text-xs font-semibold bg-ambre text-noirChaud hover:brightness-105 transition-all shadow-sm whitespace-nowrap">
+                S'inscrire →
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGINE -->
+  <section id="origine" class="py-20 md:py-28 border-t border-noirChaud/10 bg-[#FAF7F2]">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-vertOlive block mb-3 font-medium">Origine</span>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-normal text-noirChaud">L'essence de la marque</h2>
+      </div>
+
+      <div class="space-y-6 text-base sm:text-lg text-brunCacao leading-relaxed font-light">
+        <p>
+          Hélia est né d'un constat simple. Créer son entreprise est une aventure passionnante, mais aussi profondément solitaire.
+        </p>
+        <p>
+          Derrière chaque projet, il y a des heures de travail, des doutes, des décisions à prendre, des réussites que l'on célèbre parfois seule, et des difficultés qu'il est difficile d'expliquer à ceux qui ne vivent pas cette réalité.
+        </p>
+        <p>
+          Au fil des échanges avec d'autres femmes créatives indépendantes, un même besoin revenait sans cesse : celui de rencontrer des personnes qui vivent la même aventure, de sortir de l'isolement, de partager sans avoir à tout expliquer.
+        </p>
+
+        <blockquote class="my-10 pl-6 border-l-2 border-ambre py-2 font-serif-title text-2xl sm:text-3xl italic text-noirChaud">
+          « Mais pourquoi ça n'existe pas déjà ? »
+        </blockquote>
+
+        <p>
+          Cette question est devenue une évidence. Hélia est né pour offrir un espace où les femmes créatives indépendantes peuvent ralentir, souffler, échanger et créer des liens sincères.
+        </p>
+        <p class="font-normal text-noirChaud">
+          Chez Hélia, nous cultivons les relations avant les opportunités.
+        </p>
+      </div>
+
+      <div class="mt-16 p-8 md:p-12 rounded-2xl bg-ivoire border border-noirChaud/10">
+        <span class="text-xs uppercase tracking-widest text-ambre font-medium block mb-2">Le sens du nom</span>
+        <h3 class="font-serif-title text-2xl sm:text-3xl text-noirChaud mb-4 font-normal">Hélias & La Lumière</h3>
+        <p class="text-brunCacao leading-relaxed font-light text-sm sm:text-base">
+          Hélia puise son nom dans la lumière. Dans la mythologie, les Héliades, filles d'Hélios, veillaient sur la lumière du jour ; leurs larmes devinrent l'ambre, cette matière chaude, dorée et vivante. C'est précisément ce que propose Hélia : la sensation d'une lumière qui entre dans une pièce et réchauffe tout ce qu'elle touche.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION : À QUOI SERT HÉLIA ? -->
+  <section id="mission" class="py-20 md:py-32 border-t border-noirChaud/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-vertOlive font-medium block mb-3">À quoi sert Hélia ?</span>
+        <h2 class="font-serif-title text-3xl sm:text-5xl font-normal text-noirChaud leading-tight mb-6">
+          Créer une entreprise ne devrait jamais signifier avancer seule<span class="text-ambre">.</span>
+        </h2>
+        <p class="text-brunCacao text-base sm:text-lg font-light leading-relaxed mb-6">
+          L'entrepreneuriat et la démarche créative peuvent parfois être solitaires. Hélia crée des rendez-vous chaleureux pour rencontrer d'autres femmes créatives indépendantes, partager ce que l'on vit et tisser des liens sincères. On vient souffler, se sentir comprise et repartir avec un nouvel élan.
+        </p>
+        <a href="#membres" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-medium bg-ambre text-noirChaud hover:brightness-105 transition-all shadow-sm">
+          Découvrir les membres <span>→</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Carte 1 : Rose -->
+        <div class="p-8 md:p-10 rounded-2xl bg-white/70 border border-noirChaud/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6 shadow-sm" style="background-color: #E5BFCF;">
+              <svg class="w-6 h-6 text-noirChaud stroke-current" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a.75.75 0 01-1.074-.865 5.968 5.968 0 00.915-2.518C3.766 16.084 3 14.135 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+              </svg>
+            </div>
+            <h3 class="font-serif-title text-2xl font-normal text-noirChaud mb-3">Rencontres & échanges</h3>
+            <p class="text-brunCacao text-sm sm:text-base leading-relaxed font-light">
+              Un espace pour parler librement du quotidien d'indépendante, célébrer ses avancées et se sentir comprise.
+            </p>
+          </div>
+        </div>
+
+        <!-- Carte 2 : Ambre -->
+        <div class="p-8 md:p-10 rounded-2xl bg-white/70 border border-noirChaud/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6 shadow-sm" style="background-color: #C38B3D;">
+              <svg class="w-6 h-6 text-noirChaud stroke-current" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+            </div>
+            <h3 class="font-serif-title text-2xl font-normal text-noirChaud mb-3">Ateliers & partages</h3>
+            <p class="text-brunCacao text-sm sm:text-base leading-relaxed font-light">
+              Des ateliers pour nourrir nos idées, prendre du recul et repartir avec un nouvel élan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Carte 3 : Brun Foncé -->
+        <div class="p-8 md:p-10 rounded-2xl bg-white/70 border border-noirChaud/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6 shadow-sm" style="background-color: #2B2521;">
+              <svg class="w-6 h-6 text-ivoire stroke-current" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+              </svg>
+            </div>
+            <h3 class="font-serif-title text-2xl font-normal text-noirChaud mb-3">Synergies & Entraide</h3>
+            <p class="text-brunCacao text-sm sm:text-base leading-relaxed font-light">
+              On partage nos expériences, nos idées et nos bonnes adresses. Au fil du temps, de belles collaborations peuvent naître naturellement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Carte 4 : Vert Olive -->
+        <div class="p-8 md:p-10 rounded-2xl bg-white/70 border border-noirChaud/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-6 shadow-sm" style="background-color: #787960;">
+              <svg class="w-6 h-6 text-ivoire stroke-current" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+              </svg>
+            </div>
+            <h3 class="font-serif-title text-2xl font-normal text-noirChaud mb-3">Moments ressources</h3>
+            <p class="text-brunCacao text-sm sm:text-base leading-relaxed font-light">
+              Petits-déjeuners gourmands, activités autour du mouvement et afterworks chaleureux : des rendez-vous pour ralentir, souffler et profiter du moment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOS VALEURS -->
+  <section class="py-14 bg-[#FAF7F2] border-t border-noirChaud/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-8">
+        <span class="text-xs uppercase tracking-[0.25em] text-vertOlive font-medium block">Nos Valeurs</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-14 text-center">
+        <span class="font-serif-title text-2xl sm:text-3xl text-noirChaud font-normal">Chaleur</span>
+        <span class="text-ambre text-sm">•</span>
+        <span class="font-serif-title text-2xl sm:text-3xl text-noirChaud font-normal">Authenticité</span>
+        <span class="text-ambre text-sm">•</span>
+        <span class="font-serif-title text-2xl sm:text-3xl text-noirChaud font-normal">Générosité</span>
+        <span class="text-ambre text-sm">•</span>
+        <span class="font-serif-title text-2xl sm:text-3xl text-noirChaud font-normal">Élan</span>
+        <span class="text-ambre text-sm">•</span>
+        <span class="font-serif-title text-2xl sm:text-3xl text-noirChaud font-normal">Lien</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANNUAIRE -->
+  <section id="membres" class="py-24 border-t border-noirChaud/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-vertOlive font-medium block mb-2">
+            ANNUAIRE
+          </span>
+          <h2 class="font-serif-title text-3xl sm:text-5xl font-normal text-noirChaud">
+            Les Femmes inspirantes du Club
+          </h2>
+          <p class="text-brunCacao text-sm sm:text-base font-light mt-2 max-w-xl">
+            Clique sur un profil pour explorer son univers et entrer en contact.
+          </p>
+        </div>
+
+        <div class="w-full md:w-72">
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Rechercher un prénom, métier..." 
+            class="w-full px-4 py-2.5 rounded-full text-xs bg-white border border-noirChaud/20 focus:outline-none focus:border-ambre text-noirChaud placeholder-brunCacao/50"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2 mb-10 pb-2 border-b border-noirChaud/10" id="filter-buttons">
+        <button data-cat="all" class="filter-btn px-4 py-1.5 rounded-full text-xs transition-all border border-noirChaud font-medium bg-noirChaud text-ivoire">
+          Toutes
+        </button>
+        <button data-cat="Bien-être" class="filter
